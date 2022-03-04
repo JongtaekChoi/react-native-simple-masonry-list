@@ -1,6 +1,6 @@
 {
   "name": "react-native-simple-masonry-list",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "simple masonry list for react native",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
