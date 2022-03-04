@@ -1,4 +1,5 @@
 # react-native-simple-masonry-list
+[![npm version](https://badge.fury.io/js/react-native-simple-masonry-list.svg)](https://badge.fury.io/js/react-native-simple-masonry-list)
 
 A simple masonry list implementation for react native. It uses the item's height to place items. So all items must have height value.
 
