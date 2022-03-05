@@ -32,6 +32,8 @@ import MasonryList from 'react-native-simple-masonry-list';
 
 See [example](example/src/App.tsx). This example code get unsplash random images using [unsplash getting random photo api](https://unsplash.com/documentation#get-a-random-photo).  It gets random 30 images from Unsplash API. The MasonryList split these images into 2 (or 3) columns in order. The previous image is placed higher regardless of the column, and the image of the same vertical offset is aligned from left to right.
 
+If you want to run the example you must create env.json file to example folder and provide Unsplash access key.
+
 ### Props
 
 The props of the MasonryList extend the props of ScrollView. It is wrapped with a ScrollView container and all props values are used in the container except below values.
