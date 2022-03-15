@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { ScrollView, ScrollViewProps, View } from 'react-native';
+import { ScrollView, ScrollViewProps, StyleSheet, View } from 'react-native';
 
 interface Props<T extends { height: number }>
   extends Omit<ScrollViewProps, 'children'> {
   columnCount?: 2 | 3;
   data: Array<T>;
-  renderItem(props: { item: T }): React.ReactNode;
+  renderItem(props: { item: T; index: number }): React.ReactNode;
 }
 
 function MasonryList<T extends { height: number }>(
@@ -33,21 +33,34 @@ function MasonryList<T extends { height: number }>(
   return (
     <ScrollView
       {...scrollViewProps}
-      style={{ flex: 1 }}
-      contentContainerStyle={{ flexDirection: 'row', justifyContent: 'center' }}
+      style={[styles.container, scrollViewProps.style]}
+      contentContainerStyle={[
+        styles.contentContainer,
+        scrollViewProps.contentContainerStyle,
+      ]}
     >
       {splitData?.map((items, index) => {
         return (
           <View
             key={`column-${index}`}
-            style={{ flex: 1, marginLeft: index && 5, alignItems: 'center' }}
+            style={[styles.column, { marginLeft: index && 5 }]}
           >
-            {items.map((item) => renderItem({ item }))}
+            {items.map((item, itemIndex) =>
+              renderItem({ item, index: itemIndex })
+            )}
           </View>
         );
       })}
     </ScrollView>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+  contentContainer: { flexDirection: 'row', justifyContent: 'center' },
+  column: { flex: 1, alignItems: 'center' },
+});
 
 export default MasonryList;
