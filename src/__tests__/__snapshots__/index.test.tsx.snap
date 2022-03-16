@@ -1,0 +1,1005 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MasonryList renders without errors 1`] = `
+<RCTScrollView
+  contentContainerStyle={
+    Array [
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "center",
+      },
+      undefined,
+    ]
+  }
+  style={
+    Array [
+      Object {
+        "flex": 1,
+      },
+      undefined,
+    ]
+  }
+  testID="MasonryList"
+>
+  <View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+          },
+          Object {
+            "marginLeft": 0,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 500,
+            },
+          ]
+        }
+        testID="item-0"
+      >
+        <Text>
+          height: 500-0
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 130,
+            },
+          ]
+        }
+        testID="item-2"
+      >
+        <Text>
+          height: 130-2
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 500,
+            },
+          ]
+        }
+        testID="item-4"
+      >
+        <Text>
+          height: 500-4
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 100,
+            },
+          ]
+        }
+        testID="item-7"
+      >
+        <Text>
+          height: 100-7
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 500,
+            },
+          ]
+        }
+        testID="item-8"
+      >
+        <Text>
+          height: 500-8
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 100,
+            },
+          ]
+        }
+        testID="item-11"
+      >
+        <Text>
+          height: 100-11
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 60,
+            },
+          ]
+        }
+        testID="item-12"
+      >
+        <Text>
+          height: 60-12
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 60,
+            },
+          ]
+        }
+        testID="item-13"
+      >
+        <Text>
+          height: 60-13
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 200,
+            },
+          ]
+        }
+        testID="item-14"
+      >
+        <Text>
+          height: 200-14
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 200,
+            },
+          ]
+        }
+        testID="item-18"
+      >
+        <Text>
+          height: 200-18
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 500,
+            },
+          ]
+        }
+        testID="item-20"
+      >
+        <Text>
+          height: 500-20
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 200,
+            },
+          ]
+        }
+        testID="item-26"
+      >
+        <Text>
+          height: 200-26
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 200,
+            },
+          ]
+        }
+        testID="item-28"
+      >
+        <Text>
+          height: 200-28
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 130,
+            },
+          ]
+        }
+        testID="item-30"
+      >
+        <Text>
+          height: 130-30
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 500,
+            },
+          ]
+        }
+        testID="item-31"
+      >
+        <Text>
+          height: 500-31
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 200,
+            },
+          ]
+        }
+        testID="item-35"
+      >
+        <Text>
+          height: 200-35
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 200,
+            },
+          ]
+        }
+        testID="item-37"
+      >
+        <Text>
+          height: 200-37
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 130,
+            },
+          ]
+        }
+        testID="item-38"
+      >
+        <Text>
+          height: 130-38
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 70,
+            },
+          ]
+        }
+        testID="item-39"
+      >
+        <Text>
+          height: 70-39
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 70,
+            },
+          ]
+        }
+        testID="item-41"
+      >
+        <Text>
+          height: 70-41
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 100,
+            },
+          ]
+        }
+        testID="item-43"
+      >
+        <Text>
+          height: 100-43
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 70,
+            },
+          ]
+        }
+        testID="item-45"
+      >
+        <Text>
+          height: 70-45
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 70,
+            },
+          ]
+        }
+        testID="item-46"
+      >
+        <Text>
+          height: 70-46
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 70,
+            },
+          ]
+        }
+        testID="item-47"
+      >
+        <Text>
+          height: 70-47
+        </Text>
+      </View>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "flex": 1,
+          },
+          Object {
+            "marginLeft": 5,
+          },
+        ]
+      }
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 500,
+            },
+          ]
+        }
+        testID="item-1"
+      >
+        <Text>
+          height: 500-1
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 200,
+            },
+          ]
+        }
+        testID="item-3"
+      >
+        <Text>
+          height: 200-3
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 50,
+            },
+          ]
+        }
+        testID="item-5"
+      >
+        <Text>
+          height: 50-5
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 500,
+            },
+          ]
+        }
+        testID="item-6"
+      >
+        <Text>
+          height: 500-6
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 200,
+            },
+          ]
+        }
+        testID="item-9"
+      >
+        <Text>
+          height: 200-9
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 500,
+            },
+          ]
+        }
+        testID="item-10"
+      >
+        <Text>
+          height: 500-10
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 100,
+            },
+          ]
+        }
+        testID="item-15"
+      >
+        <Text>
+          height: 100-15
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 60,
+            },
+          ]
+        }
+        testID="item-16"
+      >
+        <Text>
+          height: 60-16
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 200,
+            },
+          ]
+        }
+        testID="item-17"
+      >
+        <Text>
+          height: 200-17
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 60,
+            },
+          ]
+        }
+        testID="item-19"
+      >
+        <Text>
+          height: 60-19
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 200,
+            },
+          ]
+        }
+        testID="item-21"
+      >
+        <Text>
+          height: 200-21
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 130,
+            },
+          ]
+        }
+        testID="item-22"
+      >
+        <Text>
+          height: 130-22
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 70,
+            },
+          ]
+        }
+        testID="item-23"
+      >
+        <Text>
+          height: 70-23
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 70,
+            },
+          ]
+        }
+        testID="item-24"
+      >
+        <Text>
+          height: 70-24
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 60,
+            },
+          ]
+        }
+        testID="item-25"
+      >
+        <Text>
+          height: 60-25
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 200,
+            },
+          ]
+        }
+        testID="item-27"
+      >
+        <Text>
+          height: 200-27
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 500,
+            },
+          ]
+        }
+        testID="item-29"
+      >
+        <Text>
+          height: 500-29
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 70,
+            },
+          ]
+        }
+        testID="item-32"
+      >
+        <Text>
+          height: 70-32
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 200,
+            },
+          ]
+        }
+        testID="item-33"
+      >
+        <Text>
+          height: 200-33
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 100,
+            },
+          ]
+        }
+        testID="item-34"
+      >
+        <Text>
+          height: 100-34
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 500,
+            },
+          ]
+        }
+        testID="item-36"
+      >
+        <Text>
+          height: 500-36
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 60,
+            },
+          ]
+        }
+        testID="item-40"
+      >
+        <Text>
+          height: 60-40
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 60,
+            },
+          ]
+        }
+        testID="item-42"
+      >
+        <Text>
+          height: 60-42
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 200,
+            },
+          ]
+        }
+        testID="item-44"
+      >
+        <Text>
+          height: 200-44
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 60,
+            },
+          ]
+        }
+        testID="item-48"
+      >
+        <Text>
+          height: 60-48
+        </Text>
+      </View>
+      <View
+        style={
+          Array [
+            Object {
+              "alignItems": "center",
+              "justifyContent": "center",
+              "width": "100%",
+            },
+            Object {
+              "height": 200,
+            },
+          ]
+        }
+        testID="item-49"
+      >
+        <Text>
+          height: 200-49
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

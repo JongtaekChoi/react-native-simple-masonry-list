@@ -12,19 +12,23 @@ function MasonryList<T extends { height: number }>(
   props: Props<T>
 ): React.ReactElement {
   const { columnCount = 2, data, renderItem, ...scrollViewProps } = props;
-  const [splitData, setSplitData] = useState<Array<Array<T>>>();
+  const [splitData, setSplitData] =
+    useState<Array<Array<{ item: T; index: number }>>>();
 
   useEffect(() => {
     const offsets = new Array(columnCount).fill(0);
-    const newSplitData: Array<Array<T>> = new Array(columnCount)
+    const newSplitData: Array<Array<{ item: T; index: number }>> = new Array(
+      columnCount
+    )
       .fill(0)
       .map(() => []);
-    for (let item of data) {
+    for (let i = 0; i < data.length; i++) {
+      const item = data[i];
       const minOffset = offsets.reduce((minValue, currentValue) =>
         minValue > currentValue ? currentValue : minValue
       );
       const minOffsetIndex = offsets.findIndex((value) => value === minOffset);
-      newSplitData[minOffsetIndex].push(item);
+      newSplitData[minOffsetIndex].push({ item, index: i });
       offsets[minOffsetIndex] += item.height;
     }
     setSplitData(newSplitData);
@@ -39,15 +43,13 @@ function MasonryList<T extends { height: number }>(
         scrollViewProps.contentContainerStyle,
       ]}
     >
-      {splitData?.map((items, index) => {
+      {splitData?.map((items, columnIndex) => {
         return (
           <View
-            key={`column-${index}`}
-            style={[styles.column, { marginLeft: index && 5 }]}
+            key={`column-${columnIndex}`}
+            style={[styles.column, { marginLeft: columnIndex && 5 }]}
           >
-            {items.map((item, itemIndex) =>
-              renderItem({ item, index: itemIndex })
-            )}
+            {items.map(({ item, index }) => renderItem({ item, index }))}
           </View>
         );
       })}
