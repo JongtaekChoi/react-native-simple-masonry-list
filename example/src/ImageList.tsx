@@ -22,10 +22,14 @@ export default function ImageList() {
 
   React.useEffect(() => {
     getImages().then((imageList) => {
-      console.log(imageList);
-      setImages(imageList.map((image) => ({ image, height: image.height })));
+      setImages(
+        imageList.map((image) => ({
+          image,
+          height: (itemWidth * image.height) / image.width + 24,
+        }))
+      );
     });
-  }, []);
+  }, [itemWidth]);
 
   return (
     <View style={[styles.container, { paddingTop: insets.top }]}>
