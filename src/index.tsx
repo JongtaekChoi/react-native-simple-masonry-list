@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useMemo } from 'react';
 import { ScrollView, ScrollViewProps, StyleSheet, View } from 'react-native';
 
 interface Props<T extends { height: number }>
@@ -12,10 +12,8 @@ function MasonryList<T extends { height: number }>(
   props: Props<T>
 ): React.ReactElement {
   const { columnCount = 2, data, renderItem, ...scrollViewProps } = props;
-  const [splitData, setSplitData] =
-    useState<Array<Array<{ item: T; index: number }>>>();
 
-  useEffect(() => {
+  const splitData = useMemo(() => {
     const offsets = new Array(columnCount).fill(0);
     const newSplitData: Array<Array<{ item: T; index: number }>> = new Array(
       columnCount
@@ -31,7 +29,7 @@ function MasonryList<T extends { height: number }>(
       newSplitData[minOffsetIndex].push({ item, index: i });
       offsets[minOffsetIndex] += item.height;
     }
-    setSplitData(newSplitData);
+    return newSplitData;
   }, [data, columnCount]);
 
   return (
