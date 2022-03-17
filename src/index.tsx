@@ -7,7 +7,7 @@ import {
   ViewStyle,
 } from 'react-native';
 
-interface Props<T extends { height: number }>
+interface Props<T extends { height?: number }>
   extends Omit<ScrollViewProps, 'children'> {
   columnCount?: 2 | 3;
   data: Array<T>;
@@ -44,7 +44,7 @@ function MasonryList<T extends { height: number }>(
       );
       const minOffsetIndex = offsets.findIndex((value) => value === minOffset);
       newSplitData[minOffsetIndex].push({ item, index: i });
-      offsets[minOffsetIndex] += item.height;
+      offsets[minOffsetIndex] += item.height ?? 0;
     }
     return newSplitData;
   }, [data, columnCount]);
