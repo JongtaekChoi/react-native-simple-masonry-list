@@ -26,7 +26,9 @@ const Token: React.FC<Props> = ({ onPress, children, isActive }) => {
 
 const styles = StyleSheet.create({
   container: {
+    marginHorizontal: 2,
     height: 24,
+    minWidth: 24,
     paddingHorizontal: 5,
     borderRadius: 15,
     borderWidth: 1,

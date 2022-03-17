@@ -41,11 +41,11 @@ export async function getImages(
     await fetchUnsplash('photos/random', { count: 30 }).then((result) =>
       images.push(...result)
     );
-  if (images.length >= length) return images.slice(0, length);
-
-  const result = images.slice();
+  const result = [];
+  let index = 0;
   while (result.length < length) {
-    const image = images[Math.floor(Math.random() * images.length)];
+    index = (index + Math.floor(Math.random() * images.length)) % images.length;
+    const image = images[index];
     image && result.push(image);
   }
 
