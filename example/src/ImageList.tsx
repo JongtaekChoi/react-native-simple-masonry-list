@@ -60,6 +60,8 @@ export default function ImageList() {
     setRenderingTime(renderingTimeRef.current);
   }, [images]);
 
+  console.log(new Date());
+
   return (
     <View style={[styles.container, { paddingTop: insets.top }]}>
       <View style={styles.header}>
@@ -107,7 +109,7 @@ export default function ImageList() {
           contentContainerStyle={{ paddingBottom: insets.bottom }}
           data={images}
           columnCount={columnCount}
-          renderItem={({ item: { image }, index }) => (
+          renderItem={({ item: { image }, index, columnIndex }) => (
             <View style={styles.itemContainer} key={`${image.id}-${index}`}>
               <Image
                 source={{ uri: image.urls.small }}

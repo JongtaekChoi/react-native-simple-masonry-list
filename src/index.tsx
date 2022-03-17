@@ -1,17 +1,34 @@
 import React, { useMemo } from 'react';
-import { ScrollView, ScrollViewProps, StyleSheet, View } from 'react-native';
+import {
+  ScrollView,
+  ScrollViewProps,
+  StyleSheet,
+  View,
+  ViewStyle,
+} from 'react-native';
 
 interface Props<T extends { height: number }>
   extends Omit<ScrollViewProps, 'children'> {
   columnCount?: 2 | 3;
   data: Array<T>;
-  renderItem(props: { item: T; index: number }): React.ReactNode;
+  renderItem(props: {
+    item: T;
+    index: number;
+    columnIndex: number;
+  }): React.ReactNode;
+  columnViewStyle?: ViewStyle | ((columnIndex: number) => ViewStyle);
 }
 
 function MasonryList<T extends { height: number }>(
   props: Props<T>
 ): React.ReactElement {
-  const { columnCount = 2, data, renderItem, ...scrollViewProps } = props;
+  const {
+    columnCount = 2,
+    data,
+    renderItem,
+    columnViewStyle,
+    ...scrollViewProps
+  } = props;
 
   const splitData = useMemo(() => {
     const offsets = new Array(columnCount).fill(0);
@@ -45,9 +62,16 @@ function MasonryList<T extends { height: number }>(
         return (
           <View
             key={`column-${columnIndex}`}
-            style={[styles.column, { marginLeft: columnIndex && 5 }]}
+            style={[
+              styles.column,
+              typeof columnViewStyle === 'function'
+                ? columnViewStyle(columnIndex)
+                : columnViewStyle,
+            ]}
           >
-            {items.map(({ item, index }) => renderItem({ item, index }))}
+            {items.map(({ item, index }) =>
+              renderItem({ item, index, columnIndex })
+            )}
           </View>
         );
       })}
