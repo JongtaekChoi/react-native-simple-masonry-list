@@ -44,7 +44,8 @@ export async function getImages(
   const result = [];
   let index = 0;
   while (result.length < length) {
-    index = (index + Math.floor(Math.random() * images.length)) % images.length;
+    index =
+      (index + Math.floor(Math.random() * (images.length - 1))) % images.length;
     const image = images[index];
     image && result.push(image);
   }

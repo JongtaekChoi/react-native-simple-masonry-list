@@ -44,7 +44,7 @@ function MasonryList<T extends { height: number }>(
       );
       const minOffsetIndex = offsets.findIndex((value) => value === minOffset);
       newSplitData[minOffsetIndex].push({ item, index: i });
-      offsets[minOffsetIndex] += item.height ?? 0;
+      offsets[minOffsetIndex] += item.height ?? 1;
     }
     return newSplitData;
   }, [data, columnCount]);

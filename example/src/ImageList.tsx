@@ -106,10 +106,13 @@ export default function ImageList() {
       <Profiler id="masonryList" onRender={onRender}>
         <MasonryList
           style={styles.masonryList}
-          contentContainerStyle={{ paddingBottom: insets.bottom }}
+          contentContainerStyle={[
+            { paddingBottom: insets.bottom },
+            styles.masonryListContent,
+          ]}
           data={images}
           columnCount={columnCount}
-          renderItem={({ item: { image }, index, columnIndex }) => (
+          renderItem={({ item: { image }, index }) => (
             <View style={styles.itemContainer} key={`${image.id}-${index}`}>
               <Image
                 source={{ uri: image.urls.small }}
@@ -170,8 +173,13 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
   },
+  masonryListContent: {
+    paddingHorizontal: 5,
+  },
   itemContainer: {
     marginTop: 4,
+    width: '100%',
+    alignItems: 'center',
   },
   textContainer: {
     height: 20,
